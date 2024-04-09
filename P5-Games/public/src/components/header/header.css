@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+:root {
+  --bck-color-primary: #ff2600;
+  --bck-color-secondary: #000000;
+  --color-primary: #ffff;
+  --color-secondary: #df4a30;
+  --color-terciary: #ffb700;
+  --color-4: #b0c90c54;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--bck-color-secondary);
+}
+#header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  z-index: 3333;
+  border-bottom: 3px solid var(--bck-color-secondary);
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#title {
+  font-family: 'Monoton', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  border-radius: 40px;
+  padding: 0.2rem;
+  margin-right: 4rem;
+  background-color: var(--color-4);
+  color: var(--color-);
+  cursor: pointer;
+}
+.nav {
+  background-color: rgba(221, 179, 179, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  border-radius: 20px;
+}
+
+.game-btn {
+  border: none;
+  font-size: 1.5rem;
+  font-family: 'Monoton', sans-serif;
+  font-weight: bold;
+  background-color: var(--color-4);
+  color: var(--color-);
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+.game-btn:hover {
+  transform: scale(1.3);
+}
+
+@media (max-width: 700px) {
+  #title {
+    font-size: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+  }
+  .nav {
+    gap: 1rem;
+  }
+  .game-btn {
+    font-size: 1rem;
+  }
+}

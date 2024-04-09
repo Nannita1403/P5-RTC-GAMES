@@ -1,24 +1,33 @@
+import { createHeader } from './public/src/components/header/header'
+import { memory } from './public/src/pages/memory/memory'
+import { tresEnRaya } from './public/src/pages/tresEnRaya/tresEnRaya'
+import { trivial } from './public/src/pages/trivial/trivial'
+import { wellcome } from './public/src/pages/wellcome/wellcome'
+import { GAMES, QUIZ } from './public/src/utils/data'
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+createHeader(GAMES)
+wellcome()
+const title = document.querySelector('#title')
+title.addEventListener('click', () => {
+  const app = document.querySelector('#app')
+  app.innerHTML = ''
+  wellcome()
+})
+const gameButton = document.querySelector('.game-btn')
+gameButton.addEventListener('click', () => {
+  const app = document.querySelector('#app')
+  app.innerHTML = ''
+  memory(GAMES[0].id)
+})
+const secondButtongame = document.querySelector('#TresEnRaya')
+secondButtongame.addEventListener('click', () => {
+  const app = document.querySelector('#app')
+  app.innerHTML = ''
+  tresEnRaya()
+})
+const thirdButtongame = document.querySelector('#Trivial')
+thirdButtongame.addEventListener('click', () => {
+  const app = document.querySelector('#app')
+  app.innerHTML = ''
+  trivial(QUIZ)
+})

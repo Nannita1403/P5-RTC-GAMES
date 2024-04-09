@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+:root {
+  --bck-color-primary: #ff2600;
+  --bck-color-secondary: #000000;
+  --color-primary: #ffff;
+  --color-secondary: #df4a30;
+  --color-terciary: #ffb700;
+  --color-4: #b0c90c54;
+}
+
+.container-game {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+.board {
+  background-color: transparent;
+  /* margin-top: 5rem; */
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  width: 450px;
+  height: 450px;
+}
+.board > * {
+  background-color: transparent;
+  display: flex;
+  border-bottom: 4px solid var(--bck-color-secondary);
+}
+.board > *:nth-child(3) {
+  border-bottom: none;
+}
+.box {
+  background-color: transparent;
+  width: 100%;
+  border-left: 4px solid var(--bck-color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:nth-child(1) {
+  border-left: none;
+}
+.button-container {
+  margin-top: 5rem;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.player-div {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+}
+.player {
+  background-color: transparent;
+  font-family: 'Monoton', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.player:hover {
+  transform: scale(1.08);
+}
+.focus {
+  color: var(--color-terciary);
+  border: 3px solid var(--color-terciary);
+}
+span {
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Monoton', sans-serif;
+}
+.result {
+  background-color: transparent;
+  margin: 2rem;
+  font-size: 1.7rem;
+  color: var(--color-terciary);
+  font-family: 'Monoton', sans-serif;
+  letter-spacing: 0.2rem;
+  border-bottom: 3px solid var(--bck-color-secondary);
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.35);
+}
+@media (max-width: 420px) {
+  .container-game {
+    gap: 30px;
+  }
+  .button-container {
+    margin-top: 0;
+  }
+  .board {
+    margin-top: 0;
+    width: 250px;
+    height: 250px;
+  }
+}

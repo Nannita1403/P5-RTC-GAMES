@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 :root {
   --bck-color-primary: #ff2600;
   --bck-color-secondary: #000000;
@@ -11,7 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--bck-color-primary);
+  font-family: "Tilt Neon", sans-serif;
 }
 html,
 body,
@@ -19,7 +20,9 @@ header,
 #app,
 .game-container,
 #disordered {
-  background-image: url('https://www.transparenttextures.com/patterns/tileable-wood-colored.png');
+  background-image: url(./public/src/bc1881617.jpg);
+  background-size: cover;
+  background-position: center;
   transition: 0.7s ease;
 }
 a {

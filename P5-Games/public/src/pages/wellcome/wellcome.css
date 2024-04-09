@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 :root {
   --bck-color-primary: #ff2600;
   --bck-color-secondary: #000000;
@@ -15,13 +14,13 @@
   color: var(--color-terciary);
   font-size: 3rem;
   font-weight: bold;
-  font-family: 'Black Ops One', system-ui;
+  font-family: "Tilt Neon", sans-serif;
   margin-top: 5rem;
   margin-left: 5rem;
   transform: scale(1);
   animation: pulse 1s infinite;
 }
-
+/*
 @keyframes pulse {
   0% {
     transform: scale(0.95);
@@ -36,7 +35,7 @@
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
-}
+}*/
 
 .container {
   background-color: transparent;
@@ -48,7 +47,7 @@
 }
 .container > * {
   background-color: transparent;
-  font-family: 'Monoton', sans-serif;
+font-family: "Bungee Spice", sans-serif;
 }
 .container > h2 {
   letter-spacing: 0.8rem;

@@ -14,15 +14,13 @@
   box-sizing: border-box;
   font-family: "Tilt Neon", sans-serif;
 }
-html,
+
 body,
 header,
-#app,
 .game-container,
 #disordered {
-  background-image: url(./public/src/bc1881617.jpg);
+  background-color:cadetblue;
   background-size: cover;
-  background-position: center;
   transition: 0.7s ease;
 }
 a {

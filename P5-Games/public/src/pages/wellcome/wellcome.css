@@ -20,82 +20,21 @@
   transform: scale(1);
   animation: pulse 1s infinite;
 }
-/*
-@keyframes pulse {
-  0% {
-    transform: scale(0.95);
-  }
-
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-  }
-
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-}*/
 
 .container {
-  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
 }
-.container > * {
-  background-color: transparent;
-font-family: "Bungee Spice", sans-serif;
-}
+
 .container > h2 {
   letter-spacing: 0.8rem;
+  font-family: "Bungee Spice", sans-serif;
   font-size: 3em;
   max-width: 800px;
   text-align: center;
-}
-#containerGif {
-  margin-top: 5rem;
-  border-radius: 50%;
-  width: 300px;
-  height: 250px;
-}
-#gif {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-#bottonPlay {
-  font-weight: bold;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  padding: 2rem 1rem;
-  border: solid 3px var(--bck-color-secondary);
-  cursor: pointer;
-  transition: all 0.5s;
-  background-image: linear-gradient(
-    to right,
-    #e7484f,
-    #e7484f 16.65%,
-    #f68b1d 16.65%,
-    #f68b1d 33.3%,
-    #fced00 33.3%,
-    #fced00 49.95%,
-    #009e4f 49.95%,
-    #009e4f 66.6%,
-    #00aac3 66.6%,
-    #00aac3 83.25%,
-    #732982 83.25%,
-    #732982 100%,
-    #e7484f 100%
-  );
-  animation: slidebg 2.5s linear infinite;
-}
-#bottonPlay:hover {
-  transform: scale(1.1);
 }
 
 @keyframes slidebg {
@@ -107,11 +46,5 @@ font-family: "Bungee Spice", sans-serif;
   .container > h2 {
     letter-spacing: 0.8rem;
     font-size: 2em;
-  }
-  #containerGif {
-    display: none;
-  }
-  #gif {
-    display: none;
   }
 }

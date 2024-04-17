@@ -3,22 +3,22 @@ import './memory.css'
 
 export const memory = (data) => {
   const cards = [
-    'https://media.revistagq.com/photos/5cb725b0cd5468d970512e0c/16:9/w_1280,c_limit/ross_geller_friends_1863.jpg',
-    'https://media.glamour.es/photos/616f906415e793e9437c64ca/master/w_1600%2Cc_limit/628182.jpg',
-    'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2023/10/Chandler-Bing-scaled.jpg?fit=1200%2C675&quality=50&strip=all&ssl=1',
-    'https://hips.hearstapps.com/hmg-prod/images/friends-joey-mejor-peor-personaje-1563950745.jpg',
-    'https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/05/22/15585378008049.jpg',
-    'https://egoenigma.com/wp-content/uploads/2023/11/rachel-green-analisis-personalidad.jpg',
-    'https://image.ondacero.es/clipping/cmsimages02/2021/10/25/C2481CE9-D489-4315-8A38-59CB128DE7FD/98.jpg?crop=720,405,x0,y0&width=1900&height=1069&optimize=high&format=webply',
-    'https://64.media.tumblr.com/2cc212265a002c96acfc8349f1c78e2c/tumblr_psp3tvWZqe1x2rh0vo5_1280.jpg',
-    'https://media.revistagq.com/photos/5cb725b0cd5468d970512e0c/16:9/w_1280,c_limit/ross_geller_friends_1863.jpg',
-    'https://media.glamour.es/photos/616f906415e793e9437c64ca/master/w_1600%2Cc_limit/628182.jpg',
-    'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2023/10/Chandler-Bing-scaled.jpg?fit=1200%2C675&quality=50&strip=all&ssl=1',
-    'https://hips.hearstapps.com/hmg-prod/images/friends-joey-mejor-peor-personaje-1563950745.jpg',
-    'https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/05/22/15585378008049.jpg',
-    'https://egoenigma.com/wp-content/uploads/2023/11/rachel-green-analisis-personalidad.jpg',
-    'https://image.ondacero.es/clipping/cmsimages02/2021/10/25/C2481CE9-D489-4315-8A38-59CB128DE7FD/98.jpg?crop=720,405,x0,y0&width=1900&height=1069&optimize=high&format=webply',
-    'https://64.media.tumblr.com/2cc212265a002c96acfc8349f1c78e2c/tumblr_psp3tvWZqe1x2rh0vo5_1280.jpg'
+    'https://cdn.pixabay.com/photo/2023/01/09/01/15/flash-7706360_1280.png',
+    'https://cdn.pixabay.com/photo/2021/01/29/03/44/hulk-5959620_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/20/03/40/captain-america-6192855_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/20/03/40/scarlet-witch-6192856_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/20/03/42/thor-6192858_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/29/14/23/vision-6216730_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/22/22/06/iron-man-6200313_1280.png',
+    'https://cdn.pixabay.com/photo/2023/02/24/07/40/spiderman-7810368_1280.png',
+    'https://cdn.pixabay.com/photo/2023/01/09/01/15/flash-7706360_1280.png',
+    'https://cdn.pixabay.com/photo/2021/01/29/03/44/hulk-5959620_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/20/03/40/captain-america-6192855_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/20/03/40/scarlet-witch-6192856_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/20/03/42/thor-6192858_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/29/14/23/vision-6216730_1280.png',
+    'https://cdn.pixabay.com/photo/2021/04/22/22/06/iron-man-6200313_1280.png',
+    'https://cdn.pixabay.com/photo/2023/02/24/07/40/spiderman-7810368_1280.png'
   ]
   let flipped = []
   let score = 0
@@ -45,7 +45,7 @@ export const memory = (data) => {
       const imageCard = document.createElement('img')
       imageCard.className = 'image-card'
       imageCard.src =
-        'https://cdn.iconscout.com/icon/free/png-256/free-friends-4-225967.png?f=webp'
+      'https://d2bzx2vuetkzse.cloudfront.net/fit-in/0x450/unshoppable_producs/1cfbd69d-ab65-43b8-b2c0-a13ccb7e09e7.png'
 
       const flipCardBack = document.createElement('div')
       flipCardBack.className = 'flip-card-back'

@@ -9,7 +9,6 @@
 }
 #app {
   position: relative;
-  gap: 2rem;
   top: 7rem;
   display: flex;
   flex-wrap: wrap;
@@ -62,7 +61,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0.1rem;
+  gap: 5px;
+  row-gap: 15px;
 }
 .flip-card {
   width: 144px;
@@ -115,21 +115,33 @@
   color: var(--bck-color-secondary);
 }
 
-@media (max-width: 831px) {
+@media (max-width: 1030px) {
+  .container-app {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 855px) {
   #app {
-    top: 17rem;
+    top: 12rem;
     width: 100%;
     flex-direction: column;
   }
-  .game-container {
-    width: 95%;
-    gap: 0;
-  }
-  .flip-card {
-    max-width: 90px;
-    max-height: 90px;
-  }
   .counter-title {
-    font-size: 1.3rem;
+    background-color: transparent;
+    margin: 1rem;
+    font-size: 1rem;
+    border-radius: 20px ;
+    text-align: center;
+    padding: 1rem;
+    color: var(--color-terciary);
+    font-family: 'Monoton', sans-serif;
+    letter-spacing: 0.4rem;
+    border-bottom: 3px solid var(--bck-color-secondary);
+    box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.35);
   }
 }

@@ -61,7 +61,8 @@ export const memory = (data) => {
     })
 
     const app = document.querySelector('#app')
-    app.append(tablero)
+    divContainerGame.append(tablero)
+    app.append(divContainerGame)
   }
 
   const handleCardClick = (event) => {
@@ -118,7 +119,8 @@ export const memory = (data) => {
     cards.forEach((card) => card.classList.remove('disabled'))
     return intervalo
   }
-
+  const divContainerGame = document.createElement('div')
+  divContainerGame.className = 'container-game'
   const divContainerApp = document.createElement('div')
   divContainerApp.className = 'container-app'
   const timeCounterStart = document.createElement('button')
@@ -143,7 +145,8 @@ export const memory = (data) => {
     reloadButton
   )
   const app = document.querySelector('#app')
-  app.append(divContainerApp)
+  divContainerGame.append(divContainerApp)
+  app.append(divContainerGame)
 
   reloadButton.addEventListener('click', () => {
     const app = document.querySelector('#app')

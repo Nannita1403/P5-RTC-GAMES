@@ -6,7 +6,7 @@ export const trivial = (QUIZ) => {
   let preguntasResueltas = []
   let preguntasPendientes = []
   const gameContainer = document.createElement('div')
-  gameContainer.className = 'container'
+  gameContainer.className = 'container-game'
   const app = document.querySelector('#app')
   app.append(gameContainer)
 
@@ -34,7 +34,7 @@ export const trivial = (QUIZ) => {
     buttonTheme.setAttribute('data-tema', item.tematica)
     const imageButton = document.createElement('img')
     imageButton.className = 'image-icon'
-    imageButton.src = item.image
+    imageButton.src = item.src
     buttonTheme.append(imageButton)
     gameContainer.appendChild(buttonTheme)
     buttonTheme.addEventListener('click', () => {

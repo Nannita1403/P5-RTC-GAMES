@@ -9,11 +9,9 @@
 }
 #app {
   position: relative;
-  top: 7rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  top: 12rem;
+  margin:20px;
+  padding-top: 200px;
 }
 .disabled {
   pointer-events: none;
@@ -128,8 +126,6 @@
 @media (max-width: 855px) {
   #app {
     top: 12rem;
-    width: 100%;
-    flex-direction: column;
   }
   .counter-title {
     background-color: transparent;

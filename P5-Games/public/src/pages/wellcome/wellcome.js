@@ -8,7 +8,7 @@ export const wellcome = () => {
   titleWellcome.id = 'titleWellcome'
   titleWellcome.innerHTML = 'Vamos a Jugar!'
 
-  const gamesNav = document.createElement('nav')
+ /* const gamesNav = document.createElement('nav')
   gamesNav.className = 'nav'
   GAMES.forEach((game) => {
     const anchor = document.createElement('a')
@@ -20,9 +20,9 @@ export const wellcome = () => {
     gameButton.innerText = game.name
     anchor.append(gameButton)
     gamesNav.append(anchor)
-  })
+  })*/
 
-  wellcomeContainer.append(titleWellcome, gamesNav)
+  wellcomeContainer.append(titleWellcome)
   const app = document.querySelector('#app')
   app.append(wellcomeContainer)
 }

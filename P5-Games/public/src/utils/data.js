@@ -22,8 +22,7 @@ export const GAMES = [
   export const QUIZ = [
     {
       tematica: 'Juego de Tronos',
-      image:
-        'https://cdn4.iconfinder.com/data/icons/game-of-thrones-4/64/game_of_thrones_game_thrones_king_walker_north_winter_series-512.png',
+      src:'./src/pages/trivial/CFLogo.png', alt:'Ficcion',      
       preguntas: [
         {
           pregunta: '¿Quién es el Rey de los Siete Reinos al inicio de la serie?',
@@ -102,7 +101,7 @@ export const GAMES = [
     },
     {
       tematica: 'Friends',
-      image: 'https://www.curiosite.es/img/auto_catalogo/w618/28198.jpg',
+      src:'./src/pages/trivial/HistLogo.png', alt:'Historia',    
       preguntas: [
         {
           pregunta:
@@ -181,8 +180,7 @@ export const GAMES = [
     },
     {
       tematica: 'Vengadores',
-      image:
-        'https://d2bzx2vuetkzse.cloudfront.net/fit-in/0x450/unshoppable_producs/1cfbd69d-ab65-43b8-b2c0-a13ccb7e09e7.png',
+      src:'./src/pages/trivial/EntLogo.png', alt:'Entretenimiento',          
       preguntas: [
         {
           pregunta:

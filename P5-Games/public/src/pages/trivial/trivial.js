@@ -8,7 +8,7 @@ export const trivial = (QUIZ) => {
   const divContainerGame = document.createElement('div')
   divContainerGame.className = 'container-game'
   const gameContainer = document.createElement('div')
-  gameContainer.className = 'container'
+  gameContainer.className = 'container2'
   const app = document.querySelector('#app')
   app.append(gameContainer)
 
@@ -62,7 +62,7 @@ export const trivial = (QUIZ) => {
   }
 
   const mostrarPregunta = (pregunta) => {
-    const gameContainer = document.querySelector('.container')
+    const gameContainer = document.querySelector('.container2')
     gameContainer.innerHTML = ''
     const questionContainer = document.createElement('div')
     questionContainer.className = 'question-container'
@@ -93,7 +93,7 @@ export const trivial = (QUIZ) => {
   }
 
   const mostrarResultados = () => {
-    const gameContainer = document.querySelector('.container')
+    const gameContainer = document.querySelector('.container2')
     gameContainer.innerHTML = ''
     const resultadosContainer = document.createElement('div')
     resultadosContainer.className = 'resultados-container'

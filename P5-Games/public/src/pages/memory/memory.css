@@ -10,7 +10,6 @@
 #app {
   position: relative;
   margin:20px;
-  top: 150px;
 }
 .disabled {
   pointer-events: none;
@@ -20,7 +19,7 @@
   flex-direction: column;
   background-color: transparent;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 .time {
   background-color: transparent;
@@ -125,6 +124,15 @@
     justify-content: center;
     align-items: flex-end;
   }
+  .game-container {
+  background-color: transparent;
+  width: 40rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  gap: 5px;
+  row-gap: 15px;
+}
 }
 @media (max-width: 855px) {
 

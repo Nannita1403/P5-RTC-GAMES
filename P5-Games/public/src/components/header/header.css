@@ -21,7 +21,7 @@ a {
   align-content: space-around;
   align-items: center;
   padding: 2rem;
-
+  z-index: 1;
   border-bottom: 2px solid var(--bck-color-secondary);
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.55);
 }
@@ -78,16 +78,25 @@ a {
   }
   #header {
     align-items: baseline;
+    padding: 10px;
 } 
 @media (max-width: 765px) {
   #title {
     margin-left: 3rem;
     margin-bottom: 1rem;
   }
+  .game-btn {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 466px) {
   #title {
     margin-left: 3.7rem;
-  }
+  } 
+}
+@media (max-width: 375px) {
+.nav {
+  gap: 5px;
+}
 }
 }

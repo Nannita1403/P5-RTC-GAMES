@@ -16,6 +16,8 @@
   justify-content: center;
   gap: 50px;
   align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
 }
 
 .board {
@@ -95,6 +97,14 @@ span {
   border-bottom: 3px solid var(--bck-color-secondary);
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.35);
 }
+@media (max-width: 1030px) {
+  .container-game {
+    gap: 3px;
+
+    padding-top: 170px;
+  }
+  }
+
 @media (max-width: 420px) {
   .container-game {
     gap: 30px;

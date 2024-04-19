@@ -9,9 +9,7 @@
 }
 #app {
   position: relative;
-  top: 12rem;
   margin:20px;
-  padding-top: 200px;
 }
 .disabled {
   pointer-events: none;
@@ -21,7 +19,7 @@
   flex-direction: column;
   background-color: transparent;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 .time {
   background-color: transparent;
@@ -29,7 +27,6 @@
 }
 .reload,
 .time-start {
-  font-family: 'Monoton', sans-serif;
   letter-spacing: 0.4rem;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -38,21 +35,27 @@
   background-color: var(--bck-color-secondary);
   cursor: pointer;
   transition: all 0.5s;
+  font-display: center ;
+  font-weight: bold;
 }
 #reload:hover {
   transform: scale(1.04);
 }
 
 .counter-title {
+  padding: 1rem;
   background-color: transparent;
-  margin: 2rem;
-  font-size: 1.7rem;
+  margin: 1rem;
+  border-radius: 20px;
+  font-size: 13.33px;
   color: var(--color-terciary);
-  font-family: 'Monoton', sans-serif;
   letter-spacing: 0.2rem;
   border-bottom: 3px solid var(--bck-color-secondary);
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.35);
+  font-display: center ;
+  font-weight: bold;
 }
+
 .game-container {
   background-color: transparent;
   width: 40rem;
@@ -78,7 +81,6 @@
 
 .flip-card-front,
 .flip-card-back {
-  outline: solid 4px var(--color-terciary);
   background-color: transparent;
   max-width: 100%;
   height: 100%;
@@ -120,13 +122,11 @@
     width: 90%;
     background-color: transparent;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 @media (max-width: 855px) {
-  #app {
-    top: 12rem;
-  }
+
   .counter-title {
     background-color: transparent;
     margin: 1rem;
@@ -135,9 +135,20 @@
     text-align: center;
     padding: 1rem;
     color: var(--color-terciary);
-    font-family: 'Monoton', sans-serif;
     letter-spacing: 0.4rem;
     border-bottom: 3px solid var(--bck-color-secondary);
     box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+@media (max-width: 660px) {
+  .container-app {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-end;
   }
 }

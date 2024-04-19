@@ -5,8 +5,10 @@ export const trivial = (QUIZ) => {
   let fallos = 0
   let preguntasResueltas = []
   let preguntasPendientes = []
+  const divContainerGame = document.createElement('div')
+  divContainerGame.className = 'container-game'
   const gameContainer = document.createElement('div')
-  gameContainer.className = 'container-game'
+  gameContainer.className = 'container'
   const app = document.querySelector('#app')
   app.append(gameContainer)
 

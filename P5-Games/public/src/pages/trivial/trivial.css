@@ -14,6 +14,7 @@
   align-items: center;
   gap: 2rem;
   padding: 2rem;
+  padding-top: 15rem;
 }
 .choose-theme {
   background-color: transparent;
@@ -43,6 +44,7 @@
 .question-container,
 .answer-container {
   background-color: transparent;
+  margin-bottom: 20px;
 }
 .question-container > h3 {
   background-color: transparent;
@@ -60,7 +62,7 @@
 }
 .answer-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
@@ -118,7 +120,14 @@
     justify-content: center;
     align-items: center;
     gap: 0;
-    padding: 0;
+    padding: 10px;
+    padding-top: 12rem;
+  }
+  .button-container {
+    flex-direction: column;
+  }
+  .button-theme {
+    margin: 5px;
   }
 }
 }

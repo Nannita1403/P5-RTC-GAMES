@@ -42,6 +42,11 @@
     background-position: 20vw;
   }
 }
+@media (max-width: 1500px) {
+      .container {
+          padding-top: 350px;
+      }
+  }
 @media (max-width: 675px) {
   .container {
   padding-top: 350px;

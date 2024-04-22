@@ -13,6 +13,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   gap: 50px;
   align-items: center;
@@ -98,50 +99,54 @@ span {
   border-bottom: 3px solid var(--bck-color-secondary);
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.35);
 }
-@media (max-width: 1500px) {
+@media (max-width: 4000px) {
   .container-game {
     gap: 3px;
-    margin-left: 10pc;
-    padding-top: 200px;
+    padding-top: 80px;
   }
   }
-  @media (max-width: 1200px) {
-    .container-game {
-      margin-left: 2pc;
-    }
-    }
-
-    @media (max-width: 1000px) {
-      .container-game {
-        margin-left: 0pc;
-        justify-content: center;
-      }
-      }
-      @media (max-width: 925px) {
-        .button-container {
-          margin-top: 2rem;
-          flex-wrap: nowrap;
-          gap: 1rem;
-        }
-        .container-game {
-        padding-top: 120px;
-        }
-      }
-      @media (max-width: 630px) {
-        .container-game {
-          padding-top: 150px;
-        }
-        }
+ @media (max-width: 1000px) {
+  .container-game {
+   margin-left: 0pc;
+   justify-content: center;
+ }
+}
+  @media (max-width: 925px) {
+ .button-container {
+   margin-top: 2rem;
+  flex-wrap: nowrap;
+  gap: 1rem;
+ }
+  .container-game {
+   padding-top: 120px;
+   }
+   }
+ @media (max-width: 630px) {
+   .container-game {
+   padding-top: 150px;
+   }
+ }
+ @media (max-width: 500px) {
+  .board {
+    margin-top: 0;
+    width: 350px;
+    height: 350px;
+  }
+}
 @media (max-width: 420px) {
   .container-game {
-    padding-top: 170px;
+    padding-top: 200px;
   }
   .button-container {
     margin-top: 0;
   }
+}
+
+@media (max-width: 350px) {
   .board {
     margin-top: 0;
-    width: 250px;
-    height: 250px;
+    width: 310px;
+    height: 310px;
   }
 }
+

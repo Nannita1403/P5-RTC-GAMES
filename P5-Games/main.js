@@ -1,12 +1,14 @@
+import { footer } from './public/src/components/footer/footer'
 import { createHeader } from './public/src/components/header/header'
 import { memory } from './public/src/pages/memory/memory'
 import { tresEnRaya } from './public/src/pages/tresEnRaya/tresEnRaya'
 import { trivial } from './public/src/pages/trivial/trivial'
 import { wellcome } from './public/src/pages/wellcome/wellcome'
 import { GAMES, QUIZ } from './public/src/utils/data'
+
 import './style.css'
 createHeader(GAMES)
-wellcome()
+wellcome();
 const title = document.querySelector('#title')
 title.addEventListener('click', () => {
   const app = document.querySelector('#app')

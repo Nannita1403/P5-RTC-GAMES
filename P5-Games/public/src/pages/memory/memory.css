@@ -9,7 +9,6 @@
 }
 #app {
   position: relative;
-  margin:20px;
 }
 .disabled {
   pointer-events: none;
@@ -41,7 +40,18 @@
 #reload:hover {
   transform: scale(1.04);
 }
-
+.container-game2 {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 200px;
+  padding-left: 12rem;
+}
 .counter-title {
   padding: 1rem;
   background-color: transparent;
@@ -59,9 +69,10 @@
 .game-container {
   background-color: transparent;
   width: 40rem;
+  height: 40rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 5px;
   row-gap: 15px;
 }
@@ -116,6 +127,13 @@
 }
 
 @media (max-width: 1030px) {
+  .container-game2 {
+    display: flex;
+    padding-top: 160px;
+    padding-left: 0px;
+    justify-content: center;
+    gap: 10px;
+  }
   .container-app {
     display: flex;
     flex-direction: row;
@@ -125,39 +143,82 @@
     align-items: flex-end;
   }
   .game-container {
-  background-color: transparent;
-  width: 40rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr ;
-  gap: 5px;
-  row-gap: 15px;
+  gap: 2px;
+  row-gap: 0px;
+  height: 0px;
+  justify-items: center
+}
+}
+@media (max-width: 925px) {
+.container-game2 {
+  padding-top: 120px;
+  gap: 10px;
 }
 }
 @media (max-width: 855px) {
-
   .counter-title {
-    background-color: transparent;
     margin: 1rem;
     font-size: 1rem;
     border-radius: 20px ;
     text-align: center;
     padding: 1rem;
-    color: var(--color-terciary);
-    letter-spacing: 0.4rem;
-    border-bottom: 3px solid var(--bck-color-secondary);
-    box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.35);
+    letter-spacing: 0.2rem;
   }
 }
-
-
 @media (max-width: 660px) {
   .container-app {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     background-color: transparent;
     justify-content: center;
     align-items: flex-end;
   }
+  .reload, .time-start {
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    padding: 8px;
+}
+.counter-title {
+  font-size: 1rem;
+  padding: 8px;
+}
+}
+@media (max-width: 630px) {
+  .container-game2 {
+    padding-top: 160px;
+    gap: 1px;
+}
+.reload, .time-start {
+  padding: 8px;
+  margin: 10px;
+}
+.counter-title {
+padding: 8px;
+margin: 10px;
+}
+.flip-card {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+}
+}
+@media (max-width: 430px) {
+  .container-app {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+.flip-card {
+  width: 80px;
+  height: 80px;
+  perspective: 1000px;
+}
+.reload, .time-start {
+  padding: 8px;
+  margin: 4px;
+}
+.counter-title {
+padding: 8px;
+margin: 4px;
+}
 }

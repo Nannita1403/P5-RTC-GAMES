@@ -120,7 +120,7 @@ export const memory = (data) => {
     return intervalo
   }
   const divContainerGame = document.createElement('div')
-  divContainerGame.className = 'container-game'
+  divContainerGame.className = 'container-game2'
   const divContainerApp = document.createElement('div')
   divContainerApp.className = 'container-app'
   const timeCounterStart = document.createElement('button')
